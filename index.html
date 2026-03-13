@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="SealCircle.svg" />
   <title>OpenMenshiLauncher</title>
   <style>
@@ -11,6 +12,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       height: 100vh;
       background: #f1f1f1;
@@ -20,15 +22,19 @@
       font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
       color: #333;
     }
+
     .container {
       text-align: center;
       padding: 2rem;
     }
+
     .logo {
       width: 150px;
       height: 150px;
       margin: 0 auto 1rem;
+      object-fit: contain;
     }
+
     .message {
       background: white;
       display: inline-block;
@@ -37,10 +43,12 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       max-width: 500px;
     }
+
     .message p {
       margin-bottom: 1.5rem;
       line-height: 1.6;
     }
+
     .launch-button {
       display: inline-block;
       background-color: rgb(36, 163, 104);
@@ -51,18 +59,21 @@
       font-size: 1rem;
       transition: background-color 0.2s ease;
     }
+
     .launch-button:hover {
       background-color: rgb(28, 133, 85);
     }
+
     .container {
       display: flex;
       flex-direction: column;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <img src="SealCircle.svg" alt="MenshiLauncher Logo" class="logo" />
+    <img src="SealCircle.png" alt="MenshiLauncher Logo" class="logo" />
     <div class="message" id="messageBox">
       <p></p>
       <a href="#" id="manualLaunchBtn" class="launch-button" style="display: none;">
@@ -96,4 +107,5 @@
     }
   </script>
 </body>
+
 </html>
