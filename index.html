@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" type="image/svg+xml" href="SealCircle.svg" />
-  <title>OpenNumaLauncher</title>
+  <title>OpenMenshiLauncher</title>
   <style>
     * {
       margin: 0;
@@ -62,11 +62,11 @@
 </head>
 <body>
   <div class="container">
-    <img src="SealCircle.svg" alt="NumaLauncher Logo" class="logo" />
+    <img src="SealCircle.svg" alt="MenshiLauncher Logo" class="logo" />
     <div class="message" id="messageBox">
       <p></p>
       <a href="#" id="manualLaunchBtn" class="launch-button" style="display: none;">
-        手動で NumaLauncher を起動する
+        手動で MenshiLauncher を起動する
       </a>
     </div>
   </div>
@@ -80,11 +80,11 @@
     if (query) {
       messageBox.querySelector("p").innerHTML = `
         表示されたダイアログから<br><br>
-        NumaLauncherを起動してください。<br><br>
+        MenshiLauncherを起動してください。<br><br>
         起動後、このページは閉じて問題ありません。<br><br>
-        <a href="https://github.com/TeamKun/NumaLauncher/releases">沼ランチャーのダウンロードはこちら</a>
+        <a href="https://github.com/KUN-Membership/MenshiLauncher/releases">MenshiLauncherのダウンロードはこちら</a>
       `;
-      const launchURL = `numalauncher://?query=${encodeURIComponent(query)}`;
+      const launchURL = `menshilauncher://?query=${encodeURIComponent(query)}`;
       manualBtn.href = launchURL;
       manualBtn.style.display = 'inline-block';
       window.location.href = launchURL;
